@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <style>
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background-color: #f8fafc;
+    }
+
+    header {
+        background: linear-gradient(135deg, #2563eb, #0f172a);
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      border-left: 5px solid #2563eb;
+      padding-left: 0.75rem;
+    }
+
+    .category {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    
+    .category button {
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      cursor: pointer;
+      background: #e5e7eb;
+    }
+
+    .category button.enabled {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #e0e7ff;
+      color: #1e40af;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+   </style>
+</head>
+<body>
+      <header>
+          <h1> bytepointer </h1>
+          <p> Desenvolvedor de Software com 6 anos de experiência </p>
+      </header>
+
+      <main>
+
+          <section>
+              <h2> Meu Discord </h2>
+              <p> bytepointer </p>
+          </section>
+
+          <section>
+              <h2> Meus Projetos Open Sources </h2>
+
+              <div class="category" id="category">
+                  <button onclick="categoryClick(this)" class="enabled"> Todos </button>
+                  <button onclick="categoryClick(this)"> Roblox </button>
+                  <button onclick="categoryClick(this)"> Discord </button> 
+                  <button onclick="categoryClick(this)"> Exploits </button>
+                  <button onclick="categoryClick(this)"> Others </button>
+              </div>
+
+              <div class="grid" id="projects-list"></div>
+          </section>
+      </main>
+    </main>
+  <script>
+    
+    let projectDiv = document.getElementById("projects-list");
+
+    const myProjects = [{
+    "name": "inventoryservice",
+    "category": "Roblox",
+    "content": {
+        "title": "Inventory Service",
+        "about": "API de inventário customizado para Roblox.",
+        "description": "Custom Inventory",
+        "source": "https://github.com/bytepointer/InventoryService",
+        "video": "htps"
+    }
+},
+{
+    "name": "craftsystem",
+    "category": "Roblox",
+    "content": {
+        "title": "Craft System",
+        "about": "Sistema de craft.",
+        "description": "",
+        "source": "https://github.com/bytepointer/CraftSystem",
+        "video": "htps"
+    },
+},
+{
+  "name": "anticheat",
+  "category": "Roblox",
+  "content": {
+    "title": "Anti Cheat",
+    "about": "Sistema funcional de anti cheat.",
+    "description": "",
+    "source": "https",
+    "video": "https"
+  }
+},
+{
+  "name": "undiscord",
+  "category": "Discord",
+  "content": {
+    "title": "UnDiscord",
+    "about": "Delete todas suas mensagens do Discord.",
+    "description": "",
+    "source": "https",
+    "video": "https"
+  }
+},
+{
+  "name": "economybot",
+  "category": "Discord",
+  "content": {
+    "title": "Bot de Economia",
+    "about": "Bot de econômia não lançado programado para um servidor de 50 mil membros em 2024.",
+    "description": "",
+    "source": "https",
+    "video": "https"
+  }
+},
+{
+  "name": "cubiccastlesexploit",
+  "category": "Exploits",
+  "content": {
+    "title": "Cubic Castles External",
+    "about": "External programado em C++ para um MMORPG",
+    "description": "",
+    "source": "https",
+    "video": "https"
+  }
+},
+{
+    "name": "lorivuln",
+    "category": "Others",
+    "content": {
+        "title": "Loritta Vulnerabiliy",
+        "about": "Vulnerabilidade no bot loritta.",
+        "description": "AAAAAAAAAAAAAAAAAAAAAAA",
+        "source": "https://github.com/bytepointer/lorixp-vuln",
+        "video": "htps"
+    },
+}]
+
+    function renderProjects(projects) {
+
+        projectDiv.innerHTML = '';
+        projects.forEach((project) => {
+            let card = document.createElement("div")
+            card.className = "card"
+            card.innerHTML = `<span class="tag">${project.category}</span><h3>${project.content.title}</h3><p>${project.content.about}</p>`;
+          
+            card.onclick = function() {
+              window.location.href = `./info.html?name=${project.name}`
+            }
+            projectDiv.appendChild(card);
+        })
+    }
+
+   function categoryClick(category) {
+
+        let categoryName = category.textContent.trim();
+
+        console.log(categoryName)
+
+        document.querySelectorAll(".category button.enabled").forEach(c => c.classList.remove("enabled"));
+        category.classList.add("enabled")
+
+        if(categoryName == "Todos") {
+            renderProjects(myProjects)
+        } else {
+            renderProjects(myProjects.filter((obj) => obj.category == categoryName));
+        }
+   }
+
+   renderProjects(myProjects)
+
+  </script>
+</body>
+</html>
