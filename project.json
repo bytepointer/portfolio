@@ -1,0 +1,71 @@
+[{
+    "name": "inventoryservice",
+    "category": "Roblox",
+    "content": {
+        "title": "Inventory Service",
+        "about": "API de inventário customizado para Roblox.",
+        "source": "https://github.com/bytepointer/InventoryService",
+        "video": "htps"
+    }
+},
+{
+    "name": "craftsystem",
+    "category": "Roblox",
+    "content": {
+        "title": "Craft System",
+        "about": "Sistema de craft.",
+        "source": "https://github.com/bytepointer/CraftSystem",
+        "video": "htps"
+    },
+},
+{
+  "name": "anticheat",
+  "category": "Roblox",
+  "content": {
+    "title": "Anti Cheat",
+    "about": "Sistema funcional de anti cheat para a plataforma Roblox.",
+    "source": "https://github.com/bytepointer/RobloxAntiCheat",
+    "video": "https"
+  }
+},
+{
+  "name": "discordcleaner",
+  "category": "Discord",
+  "content": {
+    "title": "Discord Cleaner",
+    "about": "Delete todas suas mensagens do Discord.",
+    "source": "https://github.com/bytepointer/DiscordCleaner",
+    "video": "https"
+  }
+},
+{
+  "name": "economybot",
+  "category": "Discord",
+  "content": {
+    "title": "Bot de Econômia",
+    "about": "Bot de econômia não lançado programado para um servidor de 50 mil membros em 2024.",
+    "description": "EconomyBot",
+    "source": "https",
+    "video": "https"
+  }
+},
+{
+  "name": "cubiccastlesexploit",
+  "category": "Exploits",
+  "content": {
+    "title": "Cubic Castles External",
+    "about": "External programado em C++ para um MMORPG",
+    "source": "https://github.com/bytepointer/CubicCastlesExternal",
+    "video": "https://www.youtube.com/embed/W9Rbg8hQYCs?si=VDiA0lSqLeLzrLDd"
+  }
+},
+{
+    "name": "lorivuln",
+    "category": "Others",
+    "content": {
+        "title": "Loritta Vulnerabiliy",
+        "about": "Vulnerabilidade no bot loritta.",
+        "source": "https://github.com/bytepointer/lorixp-vuln",
+        "video": "https://www.youtube.com/embed/113ddcnBnfM"
+    },
+}]
