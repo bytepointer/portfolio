@@ -220,13 +220,15 @@
 
     let closeShowPage = document.getElementById("closeShowPage")
 
+    let myProjects = [];
+
     async function getProjects() {
         let content = await fetch("./projects.json")
 
-        return await content.json();
+        myProjects = await content.json();
     }
 
-    let myProjects = getProjects();
+    getProjects();
 
     closeShowPage.onclick = function() {
         mainPage.classList.remove("disabled");
