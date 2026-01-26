@@ -16,7 +16,7 @@
         "about": "Sistema de craft.",
         "source": "https://github.com/bytepointer/CraftSystem",
         "video": "htps"
-    },
+    }
 },
 {
   "name": "anticheat",
@@ -67,5 +67,5 @@
         "about": "Vulnerabilidade no bot loritta.",
         "source": "https://github.com/bytepointer/lorixp-vuln",
         "video": "https://www.youtube.com/embed/113ddcnBnfM"
-    },
+    }
 }]
