@@ -226,6 +226,8 @@
         let content = await fetch("./projects.json")
 
         myProjects = await content.json();
+
+        console.log(myProjects)
     }
 
     getProjects();
