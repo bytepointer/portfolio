@@ -5,7 +5,7 @@
         "title": "Inventory Service",
         "about": "API de inventário customizado para Roblox.",
         "source": "https://github.com/bytepointer/InventoryService",
-        "video": "htps"
+        "video": "https://www.youtube.com/embed/IJTAQSn5CMM"
     }
 },
 {
@@ -15,7 +15,7 @@
         "title": "Craft System",
         "about": "Sistema de craft.",
         "source": "https://github.com/bytepointer/CraftSystem",
-        "video": "htps"
+        "video": "https://www.youtube.com/embed/0JTXzzfmHgI"
     }
 },
 {
@@ -25,7 +25,7 @@
     "title": "Anti Cheat",
     "about": "Sistema funcional de anti cheat para a plataforma Roblox.",
     "source": "https://github.com/bytepointer/RobloxAntiCheat",
-    "video": "https"
+    "video": "https://www.youtube.com/embed/M1SAXTmMWaA"
   }
 },
 {
@@ -56,7 +56,7 @@
     "title": "Cubic Castles External",
     "about": "External programado em C++ para um MMORPG",
     "source": "https://github.com/bytepointer/CubicCastlesExternal",
-    "video": "https://www.youtube.com/embed/W9Rbg8hQYCs?si=VDiA0lSqLeLzrLDd"
+    "video": "https://www.youtube.com/embed/QfPcxyohqdU"
   }
 },
 {
@@ -66,6 +66,6 @@
         "title": "Loritta Vulnerabiliy",
         "about": "Vulnerabilidade no bot loritta.",
         "source": "https://github.com/bytepointer/lorixp-vuln",
-        "video": "https://www.youtube.com/embed/113ddcnBnfM"
+        "video": "https://www.youtube.com/embed/7LHIr-C2ThQ"
     }
 }]
